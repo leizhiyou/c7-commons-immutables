@@ -23,6 +23,10 @@ public interface _ProcessDefinition extends _ResourceDefinition, ProcessDefiniti
   String getDescription();
 
   @Override
+  @Nullable
+  String getDiagramResourceName();
+
+  @Override
   default boolean hasStartFormKey() {
     return false;
   }
